@@ -55,3 +55,35 @@ def background_css():
 @views.route('/margin-padding-css')
 def margin_padding_css():
     return render_template('css_margin_padding.html')
+
+# Python
+
+
+@views.route('/pengenalan-python')
+def pengenalan_python():
+    return render_template('python_pengenalan.html')
+
+
+@views.route('/instalasi-python')
+def instalasi_python():
+    return render_template('python_instalasi.html')
+
+
+@views.route('/menjalankan-python')
+def menjalankan_python():
+    return render_template('python_menjalankan.html')
+
+
+@views.route('/dasar-python')
+def hello_world_python():
+    return render_template('python_hello_world.html')
+
+
+@views.route('/komentar-python')
+def komentar_python():
+    return render_template('python_komentar.html')
+
+
+@views.route('/tipe-data-python')
+def tipe_data_python():
+    return render_template('python_tipe_data.html')

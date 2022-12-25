@@ -1,7 +1,157 @@
 {% extends "css_base.html" %}
-{% block subtitle %}Pengenalan{% endblock %}
-{% block subjudul %}Pengenalan CSS{% endblock %}
+{% block subtitle %}Margin & Padding{% endblock %}
+{% block subjudul %}Margin & Padding CSS{% endblock %}
 
 {% block main_content %}
+<h2>Margin dan Padding pada CSS</h2>
+<p><strong>Margin dan padding</strong> merupakan yang paling banyak di gunakan dalam mendesain
+    sebuah website dengan
+    menggunakan CSS, karena margin dan padding di gunakan untuk mengatur sisi dalam dari pada
+    sebuah element dan
+    mengatur sisi sebelah luar dari sebuah <strong>element</strong>. Untuk itu pada tutorial ini
+    akan dijelaskan tentang apa itu margin? apa itu padding? dan
+    bagaimana cara penggunaannya
+    pada CSS.</p>
+<br>
+<h3>Mengenal Margin pada CSS</h3>
+<p><strong>Margin</strong> adalah sisi luar dari sebuah element. Misalnya anda ingin mengatur
+    jarak antar element, anda
+    bisa menggunakan syntax margin untuk mengaturnya. Terdapat beberapa sisi luar margin yaitu,
+    margin atas di tuliskan
+    pada css dengan &#8216;margin-top&#8217;, margin bawah atau jarak luar bagian bawah di tulis
+    di CSS dengan
+    &#8216;margin-bottom&#8217;, &#8216;margin-left&#8217; sebagai jarak luar sebelah kiri
+    element, dan
+    &#8216;margin-right&#8217; adalah sisi luar pada bagian sebelah kanan. Tetapi jika anda
+    hanya menggunakan syntax
+    &#8216;margin&#8217; saja maka akan secara otomatis mengatur jarak atas, bawah, kiri dan
+    kanan element. <br>
+    Berikut ini adalah contoh penggunaan margin pada CSS.</p>
 
+<p>index.html</p>
+<div class="bg-dark p-3">
+    <code>
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;</p>
+        <p>&lt;title&gt; Document &lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;div class="box"&gt;</p>
+        <p>&lt;h1&gt; Ini adalah box &lt;/h1&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;div class="box-dua"&gt;</p>
+        <p>&lt;h1&gt; Ini adalah box dua &lt;/h1&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+    </code>
+</div>
+<br>
+
+<p>style.css</p>
+<div class="bg-dark p-3">
+    <code>
+        <p>.box {</p>
+        <p>background: blue;</p>
+        <p>height: 200px;</p>
+        <p>width: 300px;</p>
+        <p>margin: 20px;</p>
+        <p>}</p>
+        <br>
+        <p>.box-dua {</p>
+        <p>background: red;</p>
+        <p>height: 100px;</p>
+        <p>width: 200px;</p>
+        <p>margin-left: 70px;</p>
+        <p>}</p>
+    </code>
+</div>
+<br>
+
+<div id="attachment_255"><img aria-describedby="caption-attachment-255" class="img-fluid"
+        title="mengenal margin pada css"
+        src="https://www.malasngoding.com/wp-content/uploads/2015/12/margin-pada-css.png" alt="mengenal margin pada css"
+        srcset="https://www.malasngoding.com/wp-content/uploads/2015/12/margin-pada-css.png 690w, https://www.malasngoding.com/wp-content/uploads/2015/12/margin-pada-css-600x398.png 600w, https://www.malasngoding.com/wp-content/uploads/2015/12/margin-pada-css-300x199.png 300w" />
+</div>
+<br>
+<p>Perhatikan contoh di atas. Pada kotak dua kita <strong>mengatur margin-left</strong>
+    atau margin kiri sebesar
+    70px atau 70 pixel. Dan pada kotak yang berwarna biru kita memberikan
+    <strong>margin</strong> atau jarak luar segala
+    sisi sebesar 20px.
+</p>
+<br>
+
+<h3>Mengenal Padding pada CSS</h3>
+<p><strong>Padding</strong> adalah sisi dalam dari sebuah element. Kita bisa menggunakan syntax
+    padding untuk mengatur
+    jarak pada sisi dalam sebuah element yang kita tentukan, sama seperti
+    <strong>margin</strong> yang memiliki
+    sisi-sisi, seperti top, left, right, bottom. Jenis padding yaitu padding atas di tuliskan
+    pada css dengan
+    &#8216;padding-top&#8217; yang berarti mengatur sisi dalam sebelah atas sebuah element,
+    pading bawah atau jarak
+    dalam bagian bawah di tulis di CSS dengan &#8216;padding-bottom&#8217;,
+    &#8216;padding-left&#8217; sebagai jarak
+    dalam sebelah kiri element, dan &#8216;padding-right&#8217; adalah sisi luar pada bagian
+    sebelah kanan. Jika anda
+    hanya menggunakan syntax &#8216;padding&#8217; saja maka akan secara otomatis mengatur jarak
+    atas, bawah, kiri dan
+    kanan element yang bagian dalam. <br>
+    Berikut ini adalahContoh penggunaan padding pada CSS.
+</p>
+
+<p>index.html</p>
+<div class="bg-dark p-3">
+    <code>
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;</p>
+        <p>&lt;title&gt; Document &lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;h1&gt; www.malasngoding.com &lt;/h1&gt;</p>
+        <p>&lt;div class="box"&gt;</p>
+        <p>&lt;h1&gt; Ini adalah box &lt;/h1&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;div class="box-dua"&gt;</p>
+        <p>&lt;h1&gt; Ini adalah box dua &lt;/h1&gt;</p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+    </code>
+</div>
+<br>
+
+<p>style.css</p>
+<div class="bg-dark p-3">
+    <code>
+        <p>h1 {</p>
+        <p>text-align: center;</p>
+        <p>}</p>
+        <br>
+        <p>.box {</p>
+        <p>background: blue;</p>
+        <p>height: 200px;</p>
+        <p>width: 300px;</p>
+        <p>margin: 20px;</p>
+        <p>}</p>
+        <br>
+        <p>.box-dua {</p>
+        <p>background: red;</p>
+        <p>height: 100px;</p>
+        <p>width: 200px;</p>
+        <p>margin-left: 70px;</p>
+        <p>}</p>
+    </code>
+</div>
+<br>
+
+<div id="attachment_256"><img aria-describedby="caption-attachment-256" class="img-fluid"
+        title="Belajar CSS Margin dan Padding pada CSS"
+        src="https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-padding-css-1024x621.png"
+        alt="Belajar CSS Margin dan Padding pada CSS"
+        srcset="https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-padding-css-1024x621.png 1024w, https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-padding-css-600x364.png 600w, https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-padding-css-300x182.png 300w, https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-padding-css-768x466.png 768w, https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-padding-css.png 1103w" />
+</div>
 {% endblock %}

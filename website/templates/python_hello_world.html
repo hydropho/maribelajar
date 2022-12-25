@@ -1,0 +1,25 @@
+{% extends "python_base.html" %}
+{% block subtitle %}Hello World!{% endblock %}
+{% block subjudul %}Hello World!{% endblock %}
+
+{% block main_content %}
+<h2>Hello World Python</h2>
+<p>Syntax bahasa Python hampir sama dengan bahasa pemrograman pada umumnya seperti Java atau PHP.</p>
+<h3>Syntax Dasar</h3>
+<p>Dibawah ini adalah contoh fungsi Python yang digunakan untuk mencetak. Di Python untuk mencetak cukup gunakan fungsi
+    <code>print()</code> , dimana sesuatu yang akan dicetak harus diletakkan diantara kurung buka dan kurung tutup,
+    bahkan di Python versi 2.x Anda tidak harus menggunakan tanda kurung kurawal, cukup pisahkan dengan spasi.
+</p>
+<p>Jika ingin mencetak tipe data String langsung, Anda harus memasukanya ke dalam tanda kutip terlebih dahulu.</p>
+<div class="bg-dark p-3">
+    <code>
+        print(&quot;Hello World&quot;)
+    </code>
+</div>
+<p>Saat anda menjalankan script diatas, Anda akan melihat output berupa text <code>Hello World</code></p>
+<h3>Python Case Sensitivity</h3>
+<p>Python bersifat case sensitif, ini artinya huruf besar dan huruf kecil memiliki perbedaan. Sebagai contoh jika Anda
+    menggunakan fungsi print dengan huruf kecil <code>print()</code> akan berhasil. Lain hal jika anda menggunakan huruf
+    kapital <code>Print()</code> atau <code>PRINT()</code> , akan muncul pesan error.</p>
+<p>Aturan ini berlaku untuk nama variabel ataupun fungsi-fungsi lainnya.</p>
+{% endblock %}

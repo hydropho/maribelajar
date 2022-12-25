@@ -1,0 +1,109 @@
+{% extends "python_base.html" %}
+{% block subtitle %}Tipe Data{% endblock %}
+{% block subjudul %}Tipe Data Python{% endblock %}
+
+{% block main_content %}
+<h2>Tipe Data Python</h2>
+<p>Tipe data adalah suatu media atau memori pada komputer yang digunakan untuk menampung informasi.</p>
+<p>Python sendiri mempunyai tipe data yang cukup unik bila kita bandingkan dengan bahasa pemrograman yang lain.</p>
+<p>Berikut adalah tipe data dari bahasa pemrograman Python :</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Tipe Data</th>
+            <th>Contoh</th>
+            <th>Penjelasan</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Boolean</td>
+            <td><code>True</code> atau <code>False</code></td>
+            <td>Menyatakan benar <code>True</code> yang bernilai <code>1</code>, atau salah <code>False</code> yang
+                bernilai <code>0</code></td>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td><code>"Ayo belajar Python"</code></td>
+            <td>Menyatakan karakter/kalimat bisa berupa huruf angka, dll (diapit tanda <code>"</code> atau
+                <code>'</code>)
+            </td>
+        </tr>
+        <tr>
+            <td>Integer</td>
+            <td><code>25</code> atau <code>1209</code></td>
+            <td>Menyatakan bilangan bulat</td>
+        </tr>
+        <tr>
+            <td>Float</td>
+            <td><code>3.14</code> atau <code>0.99</code></td>
+            <td>Menyatakan bilangan yang mempunyai koma</td>
+        </tr>
+        <tr>
+            <td>Hexadecimal</td>
+            <td><code>9a</code> atau <code>1d3</code></td>
+            <td>Menyatakan bilangan dalam format heksa (bilangan berbasis 16)</td>
+        </tr>
+        <tr>
+            <td>Complex</td>
+            <td><code>1 + 5j</code></td>
+            <td>Menyatakan pasangan angka real dan imajiner</td>
+        </tr>
+        <tr>
+            <td>List</td>
+            <td><code>['xyz', 786, 2.23]</code></td>
+            <td>Data untaian yang menyimpan berbagai tipe data dan isinya bisa diubah-ubah</td>
+        </tr>
+        <tr>
+            <td>Tuple</td>
+            <td><code>('xyz', 768, 2.23)</code></td>
+            <td>Data untaian yang menyimpan berbagai tipe data tapi isinya tidak bisa diubah</td>
+        </tr>
+        <tr>
+            <td>Dictionary</td>
+            <td><code>{'nama': 'adi','id':2}</code></td>
+            <td>Data untaian yang menyimpan berbagai tipe data berupa pasangan penunjuk dan nilai</td>
+        </tr>
+    </tbody>
+</table>
+<p>Untuk mencoba berbagai macam tipe data, silahkan coba script Python dibawah ini.</p>
+<div class="bg-dark p-3">
+    <code>
+        #tipe data Boolean <br>
+        print(True) <br> <br>
+
+        #tipe data String <br>
+        print(&quot;Ayo belajar Python&quot;) <br>
+        print('Belajar Python Sangat Mudah') <br> <br>
+
+        #tipe data Integer <br>
+        print(20) <br> <br>
+
+        #tipe data Float <br>
+        print(3.14) <br> <br>
+
+        #tipe data Hexadecimal <br>
+        print(9a) <br> <br>
+
+        #tipe data Complex <br>
+        print(5j) <br> <br>
+
+        #tipe data List <br>
+        print([1,2,3,4,5]) <br>
+        print([&quot;satu&quot;, &quot;dua&quot;, &quot;tiga&quot;]) <br> <br>
+
+        #tipe data Tuple <br>
+        print((1,2,3,4,5)) <br>
+        print((&quot;satu&quot;, &quot;dua&quot;, &quot;tiga&quot;)) <br> <br>
+
+        #tipe data Dictionary <br>
+        print({&quot;nama&quot;:&quot;Budi&quot;, 'umur':20}) <br>
+        #tipe data Dictionary dimasukan ke dalam variabel biodata <br>
+        biodata = {&quot;nama&quot;:&quot;Andi&quot;, 'umur':21} #proses inisialisasi variabel biodata <br>
+        print(biodata) #proses pencetakan variabel biodata yang berisi tipe data Dictionary <br>
+        print(type(biodata)) #fungsi untuk mengecek jenis tipe data. akan tampil &lt;class 'dict'&gt; yang berarti dict
+        <br>
+        adalah tipe data dictionary
+    </code>
+</div>
+{% endblock %}

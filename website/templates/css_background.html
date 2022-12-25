@@ -1,7 +1,121 @@
 {% extends "css_base.html" %}
-{% block subtitle %}Pengenalan{% endblock %}
-{% block subjudul %}Pengenalan CSS{% endblock %}
+{% block subtitle %}Background{% endblock %}
+{% block subjudul %}Background CSS{% endblock %}
 
 {% block main_content %}
+<h2>Mengubah Background Dengan CSS</h2>
+<p><strong>Background</strong> atau <strong>latar belakang</strong> pada sebuah halaman website
+    merupakan salah satu
+    bagian yang wajib di design untuk menghasilkan sebuah halaman website yang terlihat menarik
+    dan modern. Ada beberapa
+    cara mempercantik background atau latar belakang website. bisa dengan menggunakan
+    gambar, atau bisa juga dengan mengubah warna background
+    dengan bantuan CSS. Untuk
+    mengubah background dengan CSS gunakan property background pada CSS.
+    Property background selain di
+    gunakan untuk mengubah background body website bisa juga di gunakan untuk
+    mengubah gambar
+    background pada sebuah elemen HTML yang di inginkan.
+</p>
+<br>
+<h3>Cara mengubah background dengan CSS</h3>
+<p>Pada tutorial ini akan di jelaskan
+    bagaimana cara mengubah
+    background dengan menggunakan CSS. Langsung saja masuk ke cara mengubah background
+    menggunakan CSS. Buat sebuah file
+    html dengan nama file html nya terserah anda, disini saya membuat nya dengan nama
+    index.html. Kemudian buat sebuah
+    file css dengan namanya juga terserah anda tapi disini saya membuat file css dengan nama
+    style.css.</p>
+<br>
+<h3>Mengubah warna background dengan CSS</h3>
+<p>Perhatikan penjelasan berikut ini untuk cara mengubah warna background dengan menggunakan
+    CSS.</p>
+<p>index.html</p>
+<div class="bg-dark p-3">
+    <code>
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;</p>
+        <p>&lt;title&gt; Document &lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;h1&gt; Tutorial mengubah warna background dengan CSS &lt;/h1&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+    </code>
+</div>
+<br>
 
+<p>style.css</p>
+<div class="bg-dark p-3">
+    <code>
+        <p>body {</p>
+        <p>background: blue;</p>
+        <p>color: red;</p>
+        <p>}</p>
+    </code>
+</div>
+<br>
+
+<div id="attachment_249"><img aria-describedby="caption-attachment-249" class="img-fluid"
+        src="https://www.malasngoding.com/wp-content/uploads/2015/12/cara-merubah-warna-dengan-css.png"
+        alt="cara merubah warna dengan css"
+        srcset="https://www.malasngoding.com/wp-content/uploads/2015/12/cara-merubah-warna-dengan-css.png 994w, https://www.malasngoding.com/wp-content/uploads/2015/12/cara-merubah-warna-dengan-css-600x400.png 600w, https://www.malasngoding.com/wp-content/uploads/2015/12/cara-merubah-warna-dengan-css-300x200.png 300w, https://www.malasngoding.com/wp-content/uploads/2015/12/cara-merubah-warna-dengan-css-768x511.png 768w" />
+</div>
+<br>
+<p>Pada syntax css kita menentukan body yang akan di modifikasi kemudian memberikan property
+    background dengan value
+    blue (biru) dan warna color font dengan warna white (putih).</p>
+<br>
+<h3>Mengubah gambar background dengan CSS</h3>
+<p>Pada sub judul <strong>mengubah gambar background dengan css</strong> ini akan di jelaskan
+    bagaimana cara mengubah
+    background sebuah halaman website dengan menggunakan gambar. Oleh sebab itu anda harus
+    menyediakan sebuah file
+    gambar untuk dijadikan background untuk halaman website anda. di sini saya sudah menyediakan
+    sebuah gambar sederhana
+    yang akan saya jadikan gambar pada background. Letakkan file gambar satu folder dengan file
+    html dan css agar tidak
+    kebingungan nantinya. Nama file gambar saya adalah malasngoding.png</p>
+<div id="attachment_250"><img aria-describedby="caption-attachment-250" class="img-fluid"
+        title="cara membuat background gambar dengan css"
+        src="https://www.malasngoding.com/wp-content/uploads/2015/12/cara-membuat-background-gambar-dengan-css.png"
+        alt="cara membuat background gambar dengan css"
+        srcset="https://www.malasngoding.com/wp-content/uploads/2015/12/cara-membuat-background-gambar-dengan-css.png 595w, https://www.malasngoding.com/wp-content/uploads/2015/12/cara-membuat-background-gambar-dengan-css-300x195.png 300w" />
+</div>
+<p>index.html</p>
+<div class="bg-dark p-3">
+    <code>
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;</p>
+        <p>&lt;title&gt; Document &lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;h1&gt; Membuat background gambar dengan CSS &lt;/h1&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+    </code>
+</div>
+<br>
+
+<p>style.css</p>
+<div class="bg-dark p-3">
+    <code>
+        <p>body {</p>
+        <p>background: url('malasngoding.png');</p>
+        <p>color: #fff;</p>
+        <p>}</p>
+    </code>
+</div>
+<br>
+
+<p>Perhatikan syntax css di atas untuk membuat gambar background di website anda.</p>
+<div id="attachment_251"><img aria-describedby="caption-attachment-251" class="img-fluid"
+        title="tutorial cara merubah background gambar dengan css"
+        src="https://www.malasngoding.com/wp-content/uploads/2015/12/tutorial-cara-merubah-background-gambar-dengan-css-1024x524.png"
+        alt="tutorial cara merubah background gambar dengan css"
+        srcset="https://www.malasngoding.com/wp-content/uploads/2015/12/tutorial-cara-merubah-background-gambar-dengan-css-1024x524.png 1024w, https://www.malasngoding.com/wp-content/uploads/2015/12/tutorial-cara-merubah-background-gambar-dengan-css-600x307.png 600w, https://www.malasngoding.com/wp-content/uploads/2015/12/tutorial-cara-merubah-background-gambar-dengan-css-300x154.png 300w, https://www.malasngoding.com/wp-content/uploads/2015/12/tutorial-cara-merubah-background-gambar-dengan-css-768x393.png 768w, https://www.malasngoding.com/wp-content/uploads/2015/12/tutorial-cara-merubah-background-gambar-dengan-css.png 1365w" />
+</div>
 {% endblock %}

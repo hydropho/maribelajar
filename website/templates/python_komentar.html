@@ -1,0 +1,47 @@
+{% extends "python_base.html" %}
+{% block subtitle %}Komentar{% endblock %}
+{% block subjudul %}Komentar{% endblock %}
+
+{% block main_content %}
+<h1 class="text-primary-500 font-medium text-3xl mb-3">Komentar Python</h1>
+<p>Komentar (comment) adalah kode di dalam script Python yang tidak dieksekusi atau tidak dijalankan mesin. Komentar
+    hanya digunakan untuk menandai atau memberikan keterangan tertulis pada script.</p>
+<p>Komentar biasa digunakan untuk membiarkan orang lain memahami apa yang dilakukan script. atau untuk mengingatkan
+    kepada programmer sendiri jika suatu saat kembali mengedit script tersebut.</p>
+<p>Untuk menggunakan komentar anda cukup menulis tanda pagar <code>#</code>, diikuti dengan komentar Anda.</p>
+<p>Dibawah ini adalah contoh penggunaan komentar pada Python</p>
+<div class="bg-dark p-3">
+    <code>
+        #Ini adalah komentar
+        <br> <br>
+        # Tulisan ini tidak akan dieksekusi
+        <br> <br>
+        #komentar dengan tanda pagar hanya bisa digunakan <br>
+        #untuk <br>
+        #satu <br>
+        #baris <br> <br>
+
+        &quot;&quot;&quot; <br>
+        Penulisan Komentar lebih dari satu baris yaitu <br>
+        dengan menggunakan kutip dua 3 kali dan <br>
+        ditutup dengan kutip dua 3 kali juga <br>
+        &quot;&quot;&quot; <br> <br>
+
+        print(&quot;Hello World&quot;) #ini juga komentar
+        <br> <br>
+        #print(&quot;Welcome&quot;) <br> <br>
+
+        # komentar bisa berisi spesial karakter !@#$%^&amp;\*(),./;'[]\
+        <br> <br>
+        #mencetak nama <br>
+        print(&quot;Budi&quot;) <br> <br>
+
+        #mencetak angka/integer <br>
+        print(123)
+    </code>
+</div>
+<br>
+<p>Saat anda menjalankan script diatas, Anda akan melihat output berupa <code>Hello World</code>, <code>Budi</code> dan
+    <code>123</code>, karena tulisan/komentar yang ditulis tidak dieksekusi.
+</p>
+{% endblock %}
