@@ -1,0 +1,21 @@
+.link-nav:hover {
+    color: red !important;
+}
+
+.btn-auth:hover {
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.card img {
+    height: 10rem;
+    object-fit: contain;
+}
+
+.border-r-10 {
+    border-radius: 10px !important;
+}
+
+.border-r-20 {
+    border-radius: 20px !important;
+}

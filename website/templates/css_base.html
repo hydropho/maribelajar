@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}{% block subtitle %}{% endblock %} - CSS{% endblock %}
+{% block content %}
+<section class="bg-light">
+    <div class="container">
+        <div class="row gx-5">
+            <div class="col-lg-9 col-12 mb-lg-0 mb-5">
+                <div class="title">
+                    <h1>CSS</h1>
+                    <p>{% block subjudul %}{% endblock %}</p>
+                </div>
+                <div class="content bg-white border-r-20 p-4">
+                    {% block main_content %}
+                    {% endblock %}
+                </div>
+            </div>
+            <div class="col-lg-3 col-12">
+                <div class="title pb-3">
+                    <h1 class="m-0 text-center">Materi</h1>
+                </div>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                    <div class="accordion-item border-r-20 mb-3 border-0">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="btn w-100 collapsed border-r-20 py-3 px-3 border-0 text-start" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                Pengenalan CSS
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="/pengenalan-css"
+                                            class="btn btn-primary rounded-pill w-100 text-start mb-2">Pengenalan
+                                            CSS</a>
+                                    </li>
+                                    <li><a href="/" class="btn btn-primary rounded-pill w-100 text-start">Text
+                                            Editor</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border-r-20 mb-3 border-0">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="btn w-100 collapsed border-r-20 py-3 px-3 border-0 text-start" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                                aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                Dasar CSS
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="/tag-html"
+                                            class="btn btn-primary rounded-pill w-100 text-start mb-2">Tag HTML</a>
+                                    </li>
+                                    <li><a href="/heading-html"
+                                            class="btn btn-primary rounded-pill w-100 text-start mb-2">Heading</a>
+                                    </li>
+                                    <li><a href="/format-html"
+                                            class="btn btn-primary rounded-pill w-100 text-start">Format Text</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

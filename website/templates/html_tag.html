@@ -1,0 +1,199 @@
+{% extends "html_base.html" %}
+{% block subtitle %}Tag{% endblock %}
+{% block subjudul %}Tag HTML{% endblock %}
+
+{% block main_content %}
+<h2>Mengenal Tag, Element, Atribut HTML</h2>
+<p>Setelah pengenalan HTML, Text Editor pada tutorial sebelumnya, kini kita akan memasuki
+    tutorial pengenalan dan penggunaan Tag, Element dan Atribut dalam HTMl. Ketiga pembahasan
+    ini merupakan dasar dalam
+    penulisan kode HTML atau dasar dari seluruh tampilan halaman web yang ada di internet.</p>
+<br>
+
+<h3>Tag HTML</h3>
+<p>Tag merupakan kode yang digunakan untuk memperkenalkan pada
+    web brawser untuk apa text
+    HTML yang ditulis. HTML membutuhkan cara memperkenalkan text yang ditulis didalamnya
+    kepada web browser baik text
+    itu berupa list, paragraf, link dan sebagainya, disinilah digunakan tag. Dalam penlisan
+    tag, hampir semua
+    menggunakan pembuka dan penutup tag, dimana objek yang dimaksudkan berada diantara
+    pembuka dan penutup tag. Berikut
+    penulisan tag yang diguanakan dalam HTML</p>
+<div class="bg-dark p-3">
+    <code>
+        &lt;tag&gt; Objek yang diisi &lt;tag&gt;
+    </code>
+</div>
+<br>
+<p>Perbedaan antara tag pembuka dan tag penutup yaitu, pada tag
+    pembuka diawali kurung
+    sudut pembuka, tag yang dimaksud, dan diakhiri dengan kurung sudut penutup. sedangkan
+    pada penutup tag itu diawali
+    dengan kurung sudut pembuka, backslash, tag yang dimaksud, dan diakhiri dengan penutup
+    kurung sudut.</p>
+<br>
+<h3>Jenis tag yang sering digunakan dalam HTML</h3>
+<p>Berikut beberapa jenis tag yang akan sering anda jumpai di web programing :</p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Tag</th>
+            <th>Fungsi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&lt;!&#8211; &#8230;.&#8211;&gt;</td>
+            <td>Digunakan untuk memberi sebuah komentar atau keterangan</td>
+        </tr>
+        <tr>
+            <td>&lt;!DOCTYPE html&gt;</td>
+            <td>Digunakan untuk Mendefinisikan tipe document</td>
+        </tr>
+        <tr>
+            <td>&lt;a&gt;</td>
+            <td>Mendefinisikan sebuah anchor, digunakan untuk saling menautkan antara satu
+                dokumen HTML ke dokumen HTML
+                yang lain</td>
+        </tr>
+        <tr>
+            <td>&lt;b&gt;</td>
+            <td>Membuat teks menjadi tebal</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>Membuat pargraf</td>
+        </tr>
+        <tr>
+            <td>&lt;h1&gt;</td>
+            <td>Membuat heading satu</td>
+        </tr>
+        <tr>
+            <td>&lt;h2&gt;</td>
+            <td>Membuat heading dua</td>
+        </tr>
+        <tr>
+            <td>&lt;body&gt;</td>
+            <td>Mendefinisikan body/isi dokument html</td>
+        </tr>
+        <tr>
+            <td>&lt;head&gt;</td>
+            <td>Mendefinisikan bagian kepala dokumen html</td>
+        </tr>
+        <tr>
+            <td>&lt;title&gt;</td>
+            <td>Memdefiniskan judul halaman</td>
+        </tr>
+        <tr>
+            <td>&lt;div&gt;</td>
+            <td>Mendefinisikan halaman</td>
+        </tr>
+        <tr>
+            <td>&lt;link&gt;</td>
+            <td>Mendefinisikan hubungan antar dokumen</td>
+        </tr>
+        <tr>
+            <td>&lt;script&gt;</td>
+            <td>Mendefinisikan client-side script</td>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>Mendefinisikan tabel</td>
+        </tr>
+        <tr>
+            <td>&lt;th&gt;</td>
+            <td>Mendefinisikan sel header di dalam sebuah tabel</td>
+        </tr>
+        <tr>
+            <td>&lt;td&gt;</td>
+            <td>Mendefinisikan sel di dalam sebuah tabel</td>
+        </tr>
+        <tr>
+            <td>&lt;tr&gt;</td>
+            <td>Membuat baris di dalam sebuah tabel</td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt;</td>
+            <td>Mendefinisikan daftar dalam format bullet</td>
+        </tr>
+        <tr>
+            <td>&lt;li&gt;</td>
+            <td>Mendefinisikan list</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<h3>Element HTML</h3>
+<p>Element pada HTML merupakan isi atau objek yang berada tag. Maksdunya, isi yang ada
+    diantara tag pembuka dan tag
+    penutup (termasuk jenis itu sendiri) misalkan :</p>
+
+<div class="bg-dark p-3">
+    <code>
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;</p>
+        <p>&lt;title&gt; Document &lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;h2&gt; HTML &lt;/h2&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+    </code>
+</div>
+<br>
+
+<p>Pada contoh diatas <em> <code>&lt;h2&gt;</code> HTML
+        <code>&lt;/h2&gt;</code> </em>
+    merupakan
+    element <em><strong>h2 dan isinya
+            ini adalah HTML</strong></em>. Dalam element ini bisa berupa text ataupun
+    tag lain misalnya
+    <em><code>&lt;a&gt;</code> dan sebagainya.</em>
+</p>
+<br>
+
+<h3>Atribut pada HTML</h3>
+<p>Atribut merupakan informasi tambahan yang digunakan di dalam
+    tag pembuka. Informasi ini
+    bisa berupa instruksi untuk memberikan efek warni, ketebalan, dll. Atribut bisanya
+    memiliki 2 bagian yaitu nama dan
+    nilai, dapat ditulis <strong>name=&#8221;value&#8221;</strong>. Penulisan nilai/value
+    diapit oleh dua tanda kutip
+    (bisa digunakan kutip satu atau kutip dua).</p>
+<p>Penulisan atribut pada HTML diawali dengan penulisan tag, didalam tag berikan atribut dan
+    element dari tag itu
+    sendiri berikut contoh penulisan atribut pada HTML :</p>
+
+<div class="bg-dark p-3">
+    <code>
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;</p>
+        <p>&lt;title&gt; Document &lt;/title&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;h2 align="center"&gt; pengenalan atribut HTML &lt;/h2&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+    </code>
+</div>
+<br>
+<ul>
+    <li><strong>&lt;h2&gt;</strong> adalah tag heading 2</li>
+    <li><strong>align</strong> adalah nama dari atribut</li>
+    <li><strong>center</strong> adalah nilai dari atribut</li>
+    <li><strong>pengenalan atribut HTML</strong> adalah element dari tag h2</li>
+</ul>
+<p>Tidak semua tag ini membutuhkan atribut di dalamnya, namun bagi anda yang bergelut di web
+    programing akan sering
+    menjumpai tag yang didalamnya terdapat atribut.</p>
+<p>Pada HTML ini banyak sekali atribut yang bisa digunakan tetapi hanya cocok untuk tag-tag
+    tertentu saja. misalkan
+    penggunaan atribut <strong><em>href </em></strong>yang hayan bisa diguanakan pada tag
+    <b><i>&lt;a&gt;
+        </i></b><i></i>beberapa tag lain.
+</p>
+{% endblock %}

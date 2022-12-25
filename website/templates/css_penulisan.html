@@ -1,0 +1,194 @@
+{% extends "css_base.html" %}
+{% block subtitle %}Pengenalan{% endblock %}
+{% block subjudul %}Pengenalan CSS{% endblock %}
+
+{% block main_content %}
+<h2>Cara Penulisan CSS</h2>
+<p>CSS(Cascading Style Sheet) merupakan sebuah <strong>bahasa pemrograman web</strong> yang
+    memiliki fungsi dan tujuan
+    untuk mengatur atau mendesign tiap-tiap komponen dari <strong>HTML</strong> seperti elemen
+    dan tag. dengan
+    menggunakan CSS kita dapat mengatur ukuran, warna dan bentuk dari element HTML. Mengganti
+    font, mengatur margin dan
+    mengatur padding dan banyak lagi yang dapat di lakukan menggunakan CSS untuk mempercantik
+    atau men-design halaman
+    website.
+</p>
+<p>CSS menggunakan selector(id dan class) untuk menentukan element yang akan di modifikasi atau
+    yang akan di beri
+    sentuhan css. Jika di ibaratkan HTML sebagai tiang pada sebuah bangunan rumah, maka CSS
+    berfungsi sebagai cet dan
+    dekorasi pada bangunan rumah tersebut. Ada tiga teknik metode penulisan CSS, yaitu :
+</p>
+<ul>
+    <li>Inline CSS Style</li>
+    <li>Internal CSS Style</li>
+    <li>External CSS Style</li>
+</ul>
+<br>
+<h3>Teknik penulisan CSS Inline Style</h3>
+<p>Cara pertama yaitu teknik penulisan syntax
+    css dengan Inline style
+    adalah teknik cara penulisan syntax CSS yang tidak memerlukan selector(id dan class)
+    sehingga syntax CSS di letakkan
+    atau langsung di sisipkan pada element HTML. syntax css di letakkan di dalam atribut
+    style="".
+</p>
+
+<h4>Contoh penulisan inline css style</h4>
+<p>Untuk membuat contoh penulisan
+    CSS dengan gaya inline
+    caranya sediakan sebuah file HTML atau PHP. di sini saya menggunakan HTML. saya membuat
+    sebuah file dengan nama
+    index.html.
+</p>
+<p>index.html</p>
+
+<div class="bg-dark p-3">
+    <code>
+        <p>&lt;!DOCTYPE html&gt;</p>
+    </code>
+    <code>
+        <p>&lt;html&gt;</p>
+    </code>
+    <code>
+        <p>&lt;head&gt;</p>
+    </code>
+    <code>
+        <p>&lt;title&gt; Document &lt;/title&gt;</p>
+    </code>
+    <code>
+        <p>&lt;/head&gt;</p>
+    </code>
+    <code>
+        <p>&lt;body&gt;</p>
+    </code>
+    <code>
+        <p>&lt;h1 style="color: blue;"&gt; Belajar CSS Dasar Di &lt;a
+            href="https://www.malasngoding.com"&gt;www.malasngoding.com&lt;/a&gt;&lt;/h1&gt;
+        </p>
+    </code>
+    <code>
+        <p>&lt;/body&gt;</p>
+    </code>
+    <code>
+        <p>&lt;/html&gt;</p>
+    </code>
+</div>
+<br>
+
+<p>Perhatikan pada contoh di atas. <strong>Syntax CSS</strong> di letakkan dalam element h1
+    menggunakan atribut
+    style="". Perintah color adalah perintah css yang berfungsi untuk mengatur warna
+    font, jadi pada contoh
+    inline css style ini kita membuat heading h1 dengan warna font yang kita atur menjadi blue
+    (biru).
+    <br />
+    Dan saat di jalankan maka hasilnya sebagai berikut:
+</p>
+<div id="attachment_241" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-241" class="img-fluid"
+        title="Belajar CSS Dasar Cara Penulisan CSS"
+        src="https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-penulisan-css-inline-style.png"
+        alt="contoh penulisan css inline style"
+        srcset="https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-penulisan-css-inline-style.png 698w, https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-penulisan-css-inline-style-600x370.png 600w, https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-penulisan-css-inline-style-300x185.png 300w" />
+</div>
+<br>
+
+<h3>Teknik penulisan CSS Internal Style</h3>
+<p><strong>Teknik penulisan syntax CSS dengan Internal style</strong> adalah teknik cara
+    penulisan<strong> syntax CSS</strong> yang di letakkan satu file dengan file html atau file
+    php. Syntax CSS di
+    letakkan di dalam tag
+    <code>&lt;style&gt;</code> dan di akhiri dengan tag <code>&lt;/style&gt;</code>. Biasa nya
+    tag <code>&lt;style&gt;</code> .. <code>&lt;/style&gt;</code>
+    di letakkan pada bagian tag <code>&lt;head&gt;</code> pada HTML.
+</p>
+<br>
+<h4>Contoh penulisan internal CSS Style</h4>
+<p>Perhatikan contoh <strong>penulisan internal CSS style</strong> di atas. Syntax CSS di
+    letakkan satu file dengan file HTML. Syntax css di letakkan di dalam tag
+    <code>&lt;style&gt;</code>. Syntax CSS padding berfungsi
+    sebagai pengatur jarak pada sisi dalam element. Pada contoh ini kita memberikan jarak
+    sebesar 10px atau 10 pixel. CSS
+    memanggil selector class dengan tanda titik " . " dan memanggil selector id dengan tanda
+    pagar " # ".
+</p>
+
+<p>
+<div id="attachment_242"><img aria-describedby="caption-attachment-242" class="img-fluid"
+        title="Belajar CSS Dasar Cara Penulisan CSS"
+        src="https://www.malasngoding.com/wp-content/uploads/2015/12/Contoh-penulisan-CSS-internal-style.png"
+        alt="Contoh penulisan CSS internal style"
+        srcset="https://www.malasngoding.com/wp-content/uploads/2015/12/Contoh-penulisan-CSS-internal-style.png 791w, https://www.malasngoding.com/wp-content/uploads/2015/12/Contoh-penulisan-CSS-internal-style-600x365.png 600w, https://www.malasngoding.com/wp-content/uploads/2015/12/Contoh-penulisan-CSS-internal-style-300x182.png 300w, https://www.malasngoding.com/wp-content/uploads/2015/12/Contoh-penulisan-CSS-internal-style-768x467.png 768w" />
+</div>
+</p>
+<br>
+<h3>Teknik penulisan CSS External Style</h3>
+<p>Teknik <strong>penulisan
+        Syntax CSS dengan
+        External Style</strong> adalah teknik penulisan yang memisahkan file css dan html.
+    Penggunaan CSS yang baik
+    adalah menggunakan teknik penulisan <strong>CSS</strong> ini karena kode program kita tidak
+    akan berantakan karena
+    Syntax CSS di simpan pada file css. file css dan html di hubungkan menggunakan
+</p>
+<div class="bg-dark p-3">
+    <code>
+        &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;
+    </code>
+</div>
+<br>
+<h4>Contoh penulisan CSS menggunakan External Style</h4>
+<p>Untuk membuat <strong>contoh penulisan CSS dengan External style</strong> siapkan satu buah
+    file html dan satu buah
+    file css. di sini saya membuat sebuah file dengan nama index.html dan style.css</p>
+<div id="attachment_243"><img aria-describedby="caption-attachment-243" class="img-fluid"
+        title="Belajar CSS Dasar Cara Penulisan CSS"
+        src="https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-penulisan-css-external-style.png"
+        alt="Belajar CSS Dasar Cara Penulisan CSS"
+        srcset="https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-penulisan-css-external-style.png 424w, https://www.malasngoding.com/wp-content/uploads/2015/12/contoh-penulisan-css-external-style-300x200.png 300w" />
+</div>
+<p>index.html</p>
+
+<div class="bg-dark p-3">
+    <code>
+        <p>&lt;!DOCTYPE html&gt;</p>
+        <p>&lt;html&gt;</p>
+        <p>&lt;head&gt;</p>
+        <p>&lt;title&gt; Document &lt;/title&gt;</p>
+        <p>&lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</p>
+        <p>&lt;/head&gt;</p>
+        <p>&lt;body&gt;</p>
+        <p>&lt;div class="box"&gt;</p>
+        <p>&lt;h1 id="tulisan"&gt; Belajar CSS Dasar Di &lt;a
+            href="https://www.malasngoding.com"&gt;www.malasngoding.com&lt;/a&gt; &lt;/h1&gt;
+        </p>
+        <p>&lt;/div&gt;</p>
+        <p>&lt;/body&gt;</p>
+        <p>&lt;/html&gt;</p>
+    </code>
+</div>
+<br>
+
+<p>style.css</p>
+<div class="bg-dark p-3">
+    <code>
+        <p>#tulisan{</p>
+        <p>color: black;</p>
+        <p>}</p>
+        <p>.box{</p>
+        <p>background: red;</p>
+        <p>padding: 10px;</p>
+        <p>}</p>
+    </code>
+</div>
+<br>
+
+<p>dan jika di jalankan maka hasilnya</p>
+<div id="attachment_242"><img aria-describedby="caption-attachment-242" class="img-fluid"
+        title="Belajar CSS Dasar Cara Penulisan CSS"
+        src="https://www.malasngoding.com/wp-content/uploads/2015/12/Contoh-penulisan-CSS-internal-style.png"
+        alt="Contoh penulisan CSS internal style"
+        srcset="https://www.malasngoding.com/wp-content/uploads/2015/12/Contoh-penulisan-CSS-internal-style.png 791w, https://www.malasngoding.com/wp-content/uploads/2015/12/Contoh-penulisan-CSS-internal-style-600x365.png 600w, https://www.malasngoding.com/wp-content/uploads/2015/12/Contoh-penulisan-CSS-internal-style-300x182.png 300w, https://www.malasngoding.com/wp-content/uploads/2015/12/Contoh-penulisan-CSS-internal-style-768x467.png 768w" />
+</div>
+{% endblock %}

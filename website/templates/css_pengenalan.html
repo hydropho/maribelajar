@@ -1,0 +1,73 @@
+{% extends "css_base.html" %}
+{% block subtitle %}Pengenalan{% endblock %}
+{% block subjudul %}Pengenalan CSS{% endblock %}
+
+{% block main_content %}
+<h2>Pengertian dan Pengenalan CSS</h2>
+<p>CSS merupakan singkatan dari "Cascading Style Sheets". Sesuai dengan namanya
+    CSS memiliki sifat "style sheet language" yang berarti bahasa pemrograman yang di gunakan
+    untuk web design. CSS adalah bahasa
+    pemrograman yang di gunakan untuk men-design sebuah halaman website. Dalam mendesign halaman
+    website CSS menggunakan
+    penanda yang kita kenal dengan id dan class.
+</p>
+<p>Seiring berkembang nya dunia pemrograman dan teknologi, CSS tidak cuma di gunakan di HTML dan
+    XHTML saja. tapi sudah
+    bisa di gunakan untuk mendesign tampilan aplikasi android. CSS di akses menggunakan id atau
+    class. Untuk contoh
+    penulisannya perhatikan pada contoh berikut ini.
+</p>
+<br>
+
+<h3>Fungsi dan Kegunaan CSS</h3>
+<p>CSS dapat mengubah font, ukuran font, warna dan format font, mengatur ukuran layout, lebar
+    tinggi dan warna element,
+    mengubah tampilan form, membuat halaman website yang responsive dan masih banyak lagi yang
+    dapat di lakukan oleh css.
+</p>
+<p>Untuk men-desain font dapat dilakukan dengan mendefinisikan font, untuk mengatur warna bisa
+    menggunakan color,
+    margins digunakan untuk mengatur jarak pada luar element tertetu, mengatur warna atau gambar
+    pada latar belakang
+    bisa menggunakan background, mengatur ukuran font gunakan font size.jenis font menggunakan
+    font-family dan banyak
+    lagi lainnya.
+</p>
+<br>
+<h3>Cara Penggunaan CSS</h3>
+<p>File css di simpan dengan ekstensi .css, kemudian di import atau di hubungkan kedalam file
+    HTML atau PHP yang ingin
+    kita design dengan CSS menggunakan syntax berikut ini.
+</p>
+<div class="bg-dark p-3">
+    <code>
+        &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;
+    </code>
+</div>
+<br>
+<p>Dengan tag link seperti di atas di gunakan untuk menghubungkan file html dengan file css.
+    Syntax di atas di letakkan
+    pada file html. Pada atribut rel dan type di tag link di atas di gunakan untuk
+    mendefinisikan bahwa yang di panggil
+    atau yang di hubungkan adalah file Style sheet atau css, kemudian atribut href di gunakan
+    untuk meletakkan letak
+    file css. Pada contoh di atas file style.css terletak satu folder atau direktori dengan file
+    html yang di tambahkan
+    syntax di atas.
+</p>
+<p>Jika file css terletak di luar folder maka bisa menghubungkanya dengan</p>
+<div class="bg-dark p-3">
+    <code>
+        &lt;link rel="stylesheet" type="text/css" href="../style.css" /&gt;
+    </code>
+</div>
+<br>
+<p>Jika file css terletak dalam sebuah folder, katakan saja nama foldernya adalah "assets", maka
+    untuk menghubungkannya dengan
+</p>
+<div class="bg-dark p-3">
+    <code>
+        &lt;link rel="stylesheet" type="text/css" href="assets/style.css" /&gt;
+    </code>
+</div>
+{% endblock %}
